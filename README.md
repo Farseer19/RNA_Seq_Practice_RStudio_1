@@ -1,0 +1,3 @@
+This is a simple R program that processes the RNA sequencing data from Project: SRP126485, Title: Metformin Regulates Metabolic and Non-Metabilic Pathways in Skeletal Muscle and Subcutaneous Adipose Tissues of Older Adults from Recount3.
+The program was designed as a simple pipeline starting with created a Ranged Summarized Experiment Object using the Recount3 package, columns had to be added to differentiate which patients were treated with Metformin and which were controls which were extracted from title information in the RSE.
+A DESeq object was created from the RSE using the patient and design using the "patient" and "treatment" vectors. The data in the DESeq was then pre-filtered to ensure only relevant assays would be included in the analysis. 
